@@ -1,0 +1,6 @@
+{
+  "javascript": [
+    "~/App_Plugins/favouriteThings/backoffice/myFavouriteThings/hooks.controller.js",
+    "~/App_Plugins/favouriteThings/backoffice/myFavouriteThings/orders.resource.js"
+  ]
+}

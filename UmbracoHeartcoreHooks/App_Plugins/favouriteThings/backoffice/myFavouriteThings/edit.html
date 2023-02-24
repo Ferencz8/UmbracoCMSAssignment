@@ -1,0 +1,59 @@
+﻿
+<div ng-controller="HooksController as vm">
+
+    <umb-editor-view footer="false">
+        <!--<umb-editor-header name="'Orders'" name-locked="true" alias="'ordersName'" alias-locked="true"
+                           hide-alias="true"
+                           hide-icon="true"
+                           hide-description="true"
+                           show-back-button="false">
+        </umb-editor-header>-->
+        <umb-editor-header name="vm.page.title"
+                           description="vm.page.description"
+                           hide-description="false"
+                           name-locked="true"
+                           description-locked="true"
+                           hide-alias="true"
+                           hide-icon="true"
+                           <!--navigation="vm.page.navigation"-->
+                           >
+            <span>Play</span>
+        </umb-editor-header>
+        <umb-editor-container class="form-horizontal">
+            <!--<div ng-controller="TableController as vm">-->
+            <div>
+                <!--<umb-table ng-if="vm.items"
+               items="vm.items"
+               item-properties="vm.options.includeProperties"
+               allow-select-all="vm.allowSelectAll"
+               on-select="vm.selectItem(item, $index, $event)"
+               on-click="vm.clickItem(item)"
+               on-select-all="vm.selectAll($event)"
+               on-selected-all="vm.isSelectedAll()"
+               on-sorting-direction="vm.isSortDirection(col, direction)"
+               on-sort="vm.sort(field, allow, isSystem)">
+    </umb-table>-->
+
+                <umb-box>
+                    <umb-box-header title="Configuration"></umb-box-header>
+                    <umb-box-content>
+                        <input type="text" id="hookSite" placeholder="Hook site" value="" />
+                        <umb-button action="vm.saveSite()"
+                                    type="button"
+                                    button-style="action"
+                                    state="vm.buttonState"
+                                    shortcut="ctrl+c"
+                                    label="Save"
+                                    disabled="vm.buttonState === 'busy'">
+                        </umb-button>
+                    </umb-box-content>
+
+
+                </umb-box>
+            </div>
+            <!--<umb-editor-sub-views sub-views="vm.page.navigation" model="vm"></umb-editor-sub-views>-->
+        </umb-editor-container>
+    </umb-editor-view>
+
+
+</div>

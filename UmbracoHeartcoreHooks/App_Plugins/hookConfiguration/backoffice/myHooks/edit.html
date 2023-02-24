@@ -1,0 +1,30 @@
+﻿<div ng-controller="HooksController as vm">
+    <umb-editor-view footer="false">
+        <umb-editor-header name="vm.page.title"
+                           hide-description="false"
+                           name-locked="true"
+                           description-locked="true"
+                           hide-alias="true"
+                           hide-icon="true"
+                           >
+        </umb-editor-header>
+        <umb-editor-container class="form-horizontal">
+            <div>
+                <umb-box>
+                    <umb-box-header title="Configuration"></umb-box-header>
+                    <umb-box-content>
+                        <input type="text" id="hookSite" placeholder="Hook site" value="" />
+                        <umb-button action="vm.saveSite()"
+                                    type="button"
+                                    button-style="action"
+                                    state="vm.buttonState"
+                                    shortcut="ctrl+c"
+                                    label="Save"
+                                    disabled="vm.buttonState === 'busy'">
+                        </umb-button>
+                    </umb-box-content>
+                </umb-box>
+            </div>
+        </umb-editor-container>
+    </umb-editor-view>
+</div>

@@ -1,0 +1,5 @@
+{
+  "javascript": [
+    "~/App_Plugins/hookConfiguration/backoffice/myHooks/hooks.controller.js"
+  ]
+}
