@@ -1,5 +1,5 @@
 ## How to install your own Umbraco project:
-<br/>
+
 ```
 dotnet new install Umbraco.Templates - Adds the template`
 dotnet new sln - Adds the solution
